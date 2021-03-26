@@ -20,7 +20,8 @@ interface ICardForm {
 	cols: number;
 }
 
-export const imageUrl = 'https://www.iconfinder.com/data/icons/small-n-flat/24/user-alt-512.png';
+export const imageUrl =
+	'https://www.iconfinder.com/data/icons/small-n-flat/24/user-alt-512.png';
 
 export const CardFormBase = (props: ICardForm) => {
 	const [card, setCard] = useRecoilState(cardAtom);
@@ -93,7 +94,7 @@ export const CardFormBase = (props: ICardForm) => {
 	const uploadAvatar = () => {
 		setCard({
 			...card,
-			image: imageUrl
+			image: imageUrl,
 		});
 		scrollToTop();
 	};

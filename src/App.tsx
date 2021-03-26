@@ -17,16 +17,16 @@ export const AppBase = (props: IApp) => {
 	// to get the colspan based on the screen size
 	const screens = useBreakpoint();
 	const cols = getGridDimension(screens);
-    
+
 	return (
 		<div className={props.className}>
 			<Row>
-                <Col span={cols}>
-                    <Card />
-                </Col>
-                <Col span={cols}>
-                    <CardForm cols={cols} />
-                </Col>
+				<Col span={cols}>
+					<Card />
+				</Col>
+				<Col span={cols}>
+					<CardForm cols={cols} />
+				</Col>
 			</Row>
 			<BackTop className={'back-to-top'} visibilityHeight={100}>
 				<Button

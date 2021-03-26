@@ -3,7 +3,7 @@ import { ButtonBase } from './Button';
 import { ButtonStyles, ButtonType } from './variables';
 
 const getButtonStyling = (type: ButtonType) => {
-    return ButtonStyles[type];
+	return ButtonStyles[type];
 };
 
 export const Button = styled(ButtonBase)`

@@ -5,21 +5,21 @@ import { CENTER_SELF, POSITION_END } from '../../../shared/style';
 import { CardValueBase } from './CardValue';
 
 export const CardValue = styled(CardValueBase)`
-    ${CENTER_SELF};
-    margin-top: 10px;
-    height: 22px;
+	${CENTER_SELF};
+	margin-top: 10px;
+	height: 22px;
 
-    .label {
-        width: ${cardMetadata.labelWidth}px;
-        ${POSITION_END};
-    }
+	.label {
+		width: ${cardMetadata.labelWidth}px;
+		${POSITION_END};
+	}
 
-    .value {
-        width: calc(100% - ${cardMetadata.labelWidth}px);
-    }
+	.value {
+		width: calc(100% - ${cardMetadata.labelWidth}px);
+	}
 
-    .divider {
-        margin: 0;
-        margin-top: 2px;
-    }
+	.divider {
+		margin: 0;
+		margin-top: 2px;
+	}
 `;

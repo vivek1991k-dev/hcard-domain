@@ -7,11 +7,12 @@ const TEXT_TRUNCATE = `
     white-space: pre;
     overflow: hidden;
     text-overflow: ellipsis;
-`
+`;
 
 export const Text = styled(TextBase)`
-    color: ${props => getColor(props.color)};
-    font-size: ${props => props.fontSize};
-    font-weight: ${props => props.isBold ? FontWeight.BOLD : FontWeight.REGULAR};
-    ${props => props.shouldTruncate && TEXT_TRUNCATE};
+	color: ${(props) => getColor(props.color)};
+	font-size: ${(props) => props.fontSize};
+	font-weight: ${(props) =>
+		props.isBold ? FontWeight.BOLD : FontWeight.REGULAR};
+	${(props) => props.shouldTruncate && TEXT_TRUNCATE};
 `;
