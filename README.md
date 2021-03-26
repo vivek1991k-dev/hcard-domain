@@ -24,7 +24,7 @@ The state management of the app is done using recoil.
 
 ## Total time spent
 
-1 hour: Going through the requirements and deciding on the third party libraries 
+1 hour: Going through the requirements and deciding on the third party libraries.\
 1 hour: Basic prototyping using recoil and antd components
 1 hour: Designing the metadata for forms and generating the components based on the metadata.
 1 hour: Designing the metadata for the card and generating the components.
