@@ -16,7 +16,7 @@ Card - src/metadata/card-metadata.ts
 Adding more fields in the form-metadata will render the form and it will take care of storing the item in the state as well.\
 In order to visualise the fields, relative changes needs to be made in the card-metadata file.
 
-The state management of the app is done using recoil.
+The state management of the app is done using recoil.\
 
 ### Form metadata
 
@@ -40,8 +40,8 @@ Total time spent: 6 hours
 
 ## Limitations
 
-1. The 'Upload Avatar' doesn't open the file browser. This can be implemented using a (<input type="file" accept="image/x-png,image/gif,image/jpeg" />), but it felt unnecessary since the file browser doesn't need to do anything.
-2. The app has empty spaces at the top and the bottom since both the form and the card are vertically centered. It would have been better if there was more content to fill the spaces.
+1. The 'Upload Avatar' doesn't open the file browser. This can be implemented using a (<input type="file" accept="image/x-png,image/gif,image/jpeg" />), but it felt unnecessary since the file browser doesn't need to do anything.\
+2. The app has empty spaces at the top and the bottom since both the form and the card are vertically centered. It would have been better if there was more content to fill the spaces.\
 
 ## Available Scripts
 
