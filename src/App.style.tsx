@@ -9,4 +9,9 @@ export const App = styled(AppBase)`
         flex-direction: row-reverse;
         height: 100%;
     }
+
+    .back-to-top {
+        top: 10px;
+        right: 85px;
+    }
 `;

@@ -1,10 +1,55 @@
-# Getting Started with Create React App
+# hCard App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Run the app
+
+1. Clone the repo to the local machine.
+2. Open the command terminal in the project location.
+3. Run `npm install`. This should install all the project dependencies
+4. Run `npm run start`, to run the app in port 3000.
+
+## Design of the app
+
+Both the form and the card are generated using metadata.
+Form - src/metadata/form-metadata.ts
+Card - src/metadata/card-metadata.ts
+
+Adding more fields in the form-metadata will render the form and it will take care of storing the item in the state as well.
+In order to visualise the fields, relative changes needs to be made in the card-metadata file.
+
+The state management of the app is done using recoil.
+
+### Form metadata
+
+### Card metadata
+
+## Total time spent
+
+1 hour: Going through the requirements and deciding on the third party libraries 
+1 hour: Basic prototyping using recoil and antd components
+1 hour: Designing the metadata for forms and generating the components based on the metadata.
+1 hour: Designing the metadata for the card and generating the components.
+2 hours: Styling the components and adding additional features
+Total time spent: 6 hours
+
+## Additional Features
+
+1. In mobiles, in landscape mode, the card is displayed at the top and the form is displayed at the bottom. When the user scrolls down, a 'Back to top' button is rendered which allows the user to quickly see the generated card.
+2. The 'Upload Avatar' button also acts as a 'Back to top' button.
+3. Data is truncated if the space provided in the card is not enough for display.
+4. Create hCard button stores the current information in the form to the local storage.
+
+## Limitations
+
+1. The 'Upload Avatar' doesn't open the file browser. This can be implemented using a (<input type="file" accept="image/x-png,image/gif,image/jpeg" />), but it felt unnecessary since the file browser doesn't need to do anything.
+2. The app has empty spaces at the top and the bottom since both the form and the card are vertically centered. It would have been better if there was more content to fill the spaces.
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+To install all the dependencies of the project.
 
 ### `npm start`
 
@@ -19,28 +64,6 @@ You will also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### `npm run coverage`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Launches the test runner in the interactive watch mode and produces the coverage report.\
