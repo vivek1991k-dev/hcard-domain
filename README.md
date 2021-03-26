@@ -13,14 +13,18 @@ Both the form and the card are generated using metadata.\
 Form - src/metadata/form-metadata.ts\
 Card - src/metadata/card-metadata.ts
 
+[There is no metadata details described in this section since it is very straight forward.]
+
 Adding more fields in the form-metadata will render the form and it will take care of storing the item in the state as well.\
 In order to visualise the fields, relative changes needs to be made in the card-metadata file.
 
-The state management of the app is done using recoil.
+The state management of the app is done using recoil, which passes information from the form to the card.
 
-### Form metadata
+On clicking 'Create hCard', the app saves the form to local storage. This allows the user to retrieve the previous saved form.
 
-### Card metadata
+The page has been made to be responsive, but the card stretches out and would look thin when viewed on XL and XXL screens. This has been left as is, since the card can be made better using the metadata if required.
+
+On a mobile view, the card is kept on top of the form. On scrolling down, a 'Back to top' button is rendered, which allows the user to go back and see the card after adding some values in the form.
 
 ## Total time spent
 
@@ -42,6 +46,7 @@ Total time spent: 6 hours
 
 1. The 'Upload Avatar' doesn't open the file browser. This can be implemented using a (<input type="file" accept="image/x-png,image/gif,image/jpeg" />), but it felt unnecessary since the file browser doesn't need to do anything.
 2. The app has empty spaces at the top and the bottom since both the form and the card are vertically centered. It would have been better if there was more content to fill the spaces.
+3. The input fields dont have any validation. The types of each field has been specified and is available to each input field as a prop. This can be used for data validation, but the implementation is left out from the project. This was mainly due to a lack of understanding of how the validation should function.
 
 ## Available Scripts
 

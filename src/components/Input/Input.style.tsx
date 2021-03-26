@@ -3,10 +3,10 @@ import { FontSize } from '../Text/variables';
 import { InputBase } from './Input';
 
 export const Input = styled(InputBase)`
-    margin: 0;
+	margin: 0;
 
-    .input-field {
-        font-size: ${FontSize.L};
-        border-radius: 5px;
-    }
+	.input-field {
+		font-size: ${FontSize.L};
+		border-radius: 5px;
+	}
 `;
