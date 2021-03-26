@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { cardMetadata } from '../../../metadata/card-metadata';
-import { ColorType, getColor } from '../../../shared/colors';
 import { CENTER_SELF, POSITION_END } from '../../../shared/style';
 import { CardValueBase } from './CardValue';
 
