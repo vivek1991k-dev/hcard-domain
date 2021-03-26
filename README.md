@@ -9,11 +9,11 @@
 
 ## Design of the app
 
-Both the form and the card are generated using metadata.
-Form - src/metadata/form-metadata.ts
+Both the form and the card are generated using metadata.\
+Form - src/metadata/form-metadata.ts\
 Card - src/metadata/card-metadata.ts
 
-Adding more fields in the form-metadata will render the form and it will take care of storing the item in the state as well.
+Adding more fields in the form-metadata will render the form and it will take care of storing the item in the state as well.\
 In order to visualise the fields, relative changes needs to be made in the card-metadata file.
 
 The state management of the app is done using recoil.
@@ -24,11 +24,11 @@ The state management of the app is done using recoil.
 
 ## Total time spent
 
-1 hour: Going through the requirements and deciding on the third party libraries 
-1 hour: Basic prototyping using recoil and antd components
-1 hour: Designing the metadata for forms and generating the components based on the metadata.
-1 hour: Designing the metadata for the card and generating the components.
-2 hours: Styling the components and adding additional features
+1 hour: Going through the requirements and deciding on the third party libraries.\
+1 hour: Basic prototyping using recoil and antd components.\
+1 hour: Designing the metadata for forms and generating the components based on the metadata.\
+1 hour: Designing the metadata for the card and generating the components.\
+2 hours: Styling the components and adding additional features.\
 Total time spent: 6 hours
 
 ## Additional Features
