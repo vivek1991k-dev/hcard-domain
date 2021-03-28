@@ -14,6 +14,7 @@ import React from 'react';
 import Row from 'antd/lib/row';
 import Col from 'antd/lib/col';
 import Form from 'antd/lib/form';
+import { NotificationType, displayNotification } from '../../services/notification';
 
 interface ICardForm {
 	className?: string;
@@ -88,6 +89,7 @@ export const CardFormBase = (props: ICardForm) => {
 
 	const createCard = () => {
 		localStorage.setItem('hCard', JSON.stringify(card));
+    displayNotification('hCard created and saved successfully', NotificationType.SUCCESS);
 		scrollToTop();
 	};
 

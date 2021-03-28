@@ -48,7 +48,9 @@ describe('unit tests for CardForm component', () => {
 		const createButton = screen.queryByText('Create hCard');
 		expect(createButton).toBeDefined();
 		fireEvent.click(createButton as HTMLElement);
-		expect(mockSetItem).toHaveBeenCalledWith(
+		
+    expect(screen.queryAllByText('hCard created and saved successfully').length).toBeGreaterThan(0);
+    expect(mockSetItem).toHaveBeenCalledWith(
 			'hCard',
 			JSON.stringify({
 				...mockCardAtom,
@@ -76,6 +78,8 @@ describe('unit tests for CardForm component', () => {
 		const createButton = screen.queryByText('Create hCard');
 		expect(createButton).toBeDefined();
 		fireEvent.click(createButton as HTMLElement);
+    
+    expect(screen.queryAllByText('hCard created and saved successfully').length).toBeGreaterThan(0);
 		expect(mockSetItem).toHaveBeenCalledWith(
 			'hCard',
 			JSON.stringify({
