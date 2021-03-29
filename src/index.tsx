@@ -7,9 +7,9 @@ import './index.css';
 
 ReactDOM.render(
 	<React.StrictMode>
-		<RecoilRoot>
-			<App />
-		</RecoilRoot>
+      <RecoilRoot>
+        <App />
+      </RecoilRoot>
 	</React.StrictMode>,
 	document.getElementById('root')
 );
